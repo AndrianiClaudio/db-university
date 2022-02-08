@@ -37,3 +37,19 @@ WHERE `date` = '2020-06-20' AND `hour` > '14:00:00';
 ----------
 6. Selezionare tutti i corsi di laurea magistrale
 ----------
+SELECT `name`
+FROM `degrees`
+WHERE `level` = 'magistrale';
+
+----------
+7. Da quanti dipartimenti è composta l'università?
+----------
+SELECT COUNT(`id`) as departments_num
+FROM `departments`;
+
+----------
+8. Quanti sono gli insegnanti che non hanno un numero di telefono?
+----------
+SELECT COUNT(`id`) as count_phones_num
+FROM `teachers`
+WHERE `phone` IS NULL
