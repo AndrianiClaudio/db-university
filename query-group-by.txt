@@ -3,7 +3,7 @@
 ----------
 SELECT  YEAR(`enrolment_date`) as enrolment_year, COUNT(`id`) as enrolment_num
 FROM `students`
-GROUP BY YEAR(`enrolment_date`);
+GROUP BY `enrolment_year`;
 
 ----------
 2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
